@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'CocoaLumberjack'
-  s.version  = '1.9.2'
+  s.version  = '1.9.2-sysdata1'
   s.license  = 'BSD'
   s.summary  = 'A fast & simple, yet powerful & flexible logging framework for Mac and iOS.'
   s.homepage = 'https://github.com/CocoaLumberjack/CocoaLumberjack'
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
-  
+
   s.preserve_paths = 'Lumberjack/**/README*'
 
   s.public_header_files = 'Lumberjack/**/*.h'
@@ -32,10 +32,10 @@ Pod::Spec.new do |s|
     ss.dependency 'CocoaLumberjack/Core'
     ss.source_files = 'Lumberjack/Extensions/*.{h,m}'
   end
-  
+
   s.subspec 'CLI' do |ss|
       ss.dependency 'CocoaLumberjack/Core'
       ss.source_files = 'Lumberjack/CLI/*.{h,m}'
   end
-  
+
 end
